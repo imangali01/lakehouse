@@ -5,7 +5,7 @@
 1. `spark-submit`-подход, где driver запускается в отдельном клиентском контейнере
 2. `Spark Connect`-подход, где ноутбук или клиент подключается к уже запущенному Spark Connect server
 
-<img src="lakehouse-architecture.drawio.svg" width="100%"/>
+- ![](./lakehouse-architecture.drawio.svg)
 
 Ниже я использую ваши формулировки:
 
@@ -156,15 +156,3 @@ spark = SparkSession.builder \
 - notebook или Jupyter выступает как клиент
 - соединение идет к `spark-connect`
 - код лежит в `notebooks/`
-
-## Как читать схему
-
-Схема лежит здесь:
-
-- ![docs/lakehouse-architecture.drawio.svg](lakehouse-architecture.drawio.svg)
-
-Она показывает два потока:
-
-- `user driver mode` для `spark-submit`
-- `cluster driver mode` для `Spark Connect`
-
