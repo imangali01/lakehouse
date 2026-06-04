@@ -6,10 +6,11 @@ This script reads superstore_sales.csv and loads data into public.superstore_sal
 in PostgreSQL connected via Docker Compose.
 
 Usage:
-    docker exec -it spark-client /opt/spark/bin/spark-submit \
-        --master spark://spark-master:7077 \
-        --conf "spark.ui.port=4041" \
-        /opt/pyspark/load_csv_to_postgres.py
+docker exec -it spark-client /opt/spark/bin/spark-submit \
+    --master spark://spark-master:7077 \
+    --conf "spark.ui.port=4041" \
+    --jars /opt/spark/jars/postgresql-42.2.23.jar,/opt/spark/jars/clickhouse-jdbc-all-0.9.8.jar \
+    /opt/pyspark/load_csv_to_postgres.py
 """
 
 from pyspark.sql import SparkSession

@@ -5,12 +5,11 @@ This script reads data from the PostgreSQL table public.superstore_sales
 and writes it into the ClickHouse table default.superstore_sales
 
 Usage:
-
 docker exec -it spark-client /opt/spark/bin/spark-submit \
-  --master spark://spark-master:7077 \
-  --conf "spark.ui.port=4041" \
-  --jars /opt/spark/jars/postgresql-42.2.23.jar,/opt/spark/jars/clickhouse-jdbc-all-0.9.8.jar \
-  /opt/pyspark/load_postgres_to_clickhouse.py
+    --master spark://spark-master:7077 \
+    --conf "spark.ui.port=4041" \
+    --jars /opt/spark/jars/postgresql-42.2.23.jar,/opt/spark/jars/clickhouse-jdbc-all-0.9.8.jar \
+    /opt/pyspark/load_postgres_to_clickhouse.py
 """
 
 from pyspark.sql import SparkSession
