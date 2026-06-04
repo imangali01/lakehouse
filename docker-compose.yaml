@@ -1,0 +1,68 @@
+services:
+  clickhouse:
+    image: clickhouse:24.11.3
+    container_name: clickhouse
+    restart: always
+    ports:
+      - 8123:8123
+      - 9000:9000
+    environment:
+      - CLICKHOUSE_USER=admin
+      - CLICKHOUSE_PASSWORD=admin
+    networks:
+      - lakehouse
+
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    command: >
+      bash -c "
+        docker-entrypoint.sh postgres &
+        sleep 5 &&
+        psql -U postgres -c 'CREATE DATABASE metastore;' &&
+        sleep 2 &&
+        psql -U postgres -d metastore -c \"
+          CREATE TABLE IF NOT EXISTS iceberg_tables (
+            catalog_name VARCHAR(255) NOT NULL,
+            table_namespace VARCHAR(255) NOT NULL,
+            table_name VARCHAR(255) NOT NULL,
+            metadata_location VARCHAR(1000),
+            previous_metadata_location VARCHAR(1000),
+            PRIMARY KEY (catalog_name, table_namespace, table_name)
+          );
+          CREATE TABLE IF NOT EXISTS iceberg_namespace_properties (
+            catalog_name VARCHAR(255) NOT NULL,
+            namespace VARCHAR(255) NOT NULL,
+            property_key VARCHAR(255),
+            property_value VARCHAR(1000),
+            PRIMARY KEY (catalog_name, namespace, property_key)
+          );\" &&
+        wait
+      "
+    networks:
+      - lakehouse
+  
+  minio:
+    image: minio/minio:RELEASE.2025-02-07T23-21-09Z-cpuv1
+    container_name: minio
+    restart: always
+    ports:
+      - 9001:9001
+      - 9002:9002
+    environment:
+      - MINIO_ROOT_USER=minioadmin
+      - MINIO_ROOT_PASSWORD=minioadmin
+    command: server --address ":9002" --console-address ":9001" /data
+    networks:
+      - lakehouse
+
+networks:
+  lakehouse:
+    name: lakehouse
+    driver: bridge

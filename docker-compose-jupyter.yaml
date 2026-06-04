@@ -1,0 +1,20 @@
+services:
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile.jupyter
+    image: jupyter-spark-connect:3.5.1
+    container_name: jupyter-notebook
+    ports:
+      - 8888:8888
+    volumes:
+      - ./notebooks:/home/jovyan/work
+    networks:
+      - lakehouse
+    environment:
+      - JUPYTER_TOKEN=123
+
+networks:
+  lakehouse:
+    name: lakehouse
+    driver: bridge

@@ -1,0 +1,31 @@
+# Используем стабильный базовый образ Jupyter с Python 3.11/3.12
+FROM jupyter/minimal-notebook:x86_64-python-3.11
+
+USER root
+
+# (Опционально) Если тебе внутри Jupyter всё же понадобятся утилиты вроде curl или git
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    curl \
+    git \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+USER ${NB_UID}
+
+# Устанавливаем библиотеки для Python. 
+# Фиксируем версию pyspark[connect] под твой кластер (3.5.1)
+RUN pip install --no-cache-dir \
+    "pyspark[connect]==3.5.1" \
+    "grpcio>=1.48.1" \
+    "grpcio-status>=1.48.1" \
+    "protobuf>=3.19.0" \
+    pandas \
+    pyarrow \
+    findspark
+
+# Дополнительные библиотеки для аналитики (добавь нужные, например: matplotlib, seaborn, openpyxl)
+RUN pip install --no-cache-dir \
+    matplotlib \
+    seaborn
+
+# Устанавливаем рабочую директорию по умолчанию внутри контейнера
+WORKDIR /home/jovyan/work
