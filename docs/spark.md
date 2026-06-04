@@ -5,7 +5,7 @@
 1. `spark-submit`-подход, где driver запускается в отдельном клиентском контейнере
 2. `Spark Connect`-подход, где ноутбук или клиент подключается к уже запущенному Spark Connect server
 
-- ![](./lakehouse-architecture.drawio.svg)
+- ![](./spark-architecture.drawio.svg)
 
 Ниже я использую ваши формулировки:
 

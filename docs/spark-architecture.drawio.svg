@@ -1,11 +1,11 @@
-<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="771px" height="551px" viewBox="-0.5 -0.5 771 551" content="&lt;mxfile&gt;&lt;diagram id=&quot;lakehouse-architecture&quot; name=&quot;Lakehouse Architecture&quot;&gt;5ZpNc5swEIZ/jWeaQ2ZAAhkfYydtL53pNNPpmQ8Z0wjkCjl2+usrGQkjIxynwdAmPthiJSF4tFpeLZ7ARb77xML16gtNMJkAJ9lN4O0EgOnUE9/S8FQZXMd1KkvKskTZDob77DfWDZV1kyW4NBpySgnP1qYxpkWBY27YQsbo1my2pMQcdR2muGW4j0PStv7IEr6qrIHvHOyfcZau1MhIV+ShbqsM5SpM6LZhgncTuGCU8qqU7xaYSHYaS9XvY0dtfV0MF/ycDh6qejyGZKPuTV0Yf9I3y+imSLDs4EzgfLvKOL5fh7Gs3YrpFbYVz4k4ckVxmRGyoIQycVzQQjSaqxEw43jXeZluffPCaTDNMWdPoonqAJDipRwGaqDbA31f21YN8sBTxlDNeFqf+0BFFBSYDkj+fwHJ801IFkYQ2RiBHhjpldlg9L3ETC5ylj3uC7kIAye4uS/jNgFwucQojoW95Iw+4EZNMp1FjpyIJS24Ch8u0sdqdLfG3mJsmYlu7CZ1r03dDSzU/T6gA4tjIiJGmEeikMpCKW7u4TommbxDVSnOW9fXHdjzFnGuwpg+9GsjI9U8rtDfiEqWRh/ErYlrd/TPVXUK1da8sHIT5Vnzwqox9Li9essSdHgLipCPLuINLjjTHYI+3AG23KGCnIcll0uwR5qJj4PEs9EMQAQROlp73oXW3vQM3N6lcHsduLeUPWB27fbrvkGM7e4bBb4M/b0ARcfPkNl5PFEfPNuPWYPnqYfu/8LTBUMCbYs7Ayh8C0BnAwIFbZGzIJsqtl5Q57ww1g6jc2wS/GJCp77aA/ifm/XTHvzz8qVyeoZzyvsWoPJjmxgUBzhaXkZgwgElhd7p2BXm80oQwUoDHn4rMeiUMaOERCG7PuohVmrVtFm40pW+q2yNwil5qRMAVuE7rLg0l+Tr3aKe31N+Ydvv9eIX715qWnFfSmqCdyA1IRrySf4OtKYHhwT6DrSm7wwIFLbXNC6SG5m8FkcRofGDiaitQfYfUWPmJjvBlHTDYp3gVguAhyzFupmaQ5wYyfE2PoZJyIUYNs7+Khbt5TgkC2hh4Y3Gor2Sxmbhj8bC++dYoLFY6Dg0Dov6LVyDhd47jMBi1Nip79tgMVrs9EaNncCyRsBosdMbNXZaWYwWO71RY6eVxXixU+k6S5ZD7iQNSjrPICuuy/2eU6YugvXOmoZIv31dNLIP1ek6EhBClnKTeUiytBDlWLAUu2o4l+I1i0NyoyryLElkd6t+ts3L617Dg6MdhiUHaNPD7uz1c+S3U4D3coMhTLcq89q5wXjhK3nh29hNfDy1ef0MTWGI+uF5lNnbvzE93l/YMnt9vLD3wdvjeZwS890zU2J/AVQcHv6ms69r/NcJ3v0B&lt;/diagram&gt;&lt;/mxfile&gt;">
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="772px" height="552px" viewBox="-0.5 -0.5 772 552" content="&lt;mxfile&gt;&lt;diagram id=&quot;lakehouse-architecture&quot; name=&quot;Lakehouse Architecture&quot;&gt;5ZrRbuMoFIafJtL2opJtbOJcNpmZ7s1Kq61We41t4niKTRaTJp2nHwjgmELaVOPYM9NUavABbPgOnPyAZ2BVH+4Z2m7+ogUmsygoDjPwaRZFIJ2L/9LwrAxJkChDyapCmcKT4aH6hrUx0NZdVeDWKsgpJbza2sacNg3OuWVDjNG9XWxNif3ULSqxY3jIEXGt/1UF3yhrmgQn+5+4Kjf6ydBk1MiU1YZ2gwq675nA5xlYMUq5StWHFSYSncGi6n05k9u1i+GGX1IhhqrGEyI73TfdMP5sOsvorimwrBDMwHK/qTh+2KJc5u6Fd4Vtw2sirkKRXFeErCihTFw3tBGFlgVqN8fqMr/ljD520EBnMXVmEVgdPyLH7Yzu3xNmHB96Jt25e0xrzNmzKKJzI6hB64EGjCf2J7clxrbpuSyKtRHpoVJ29z7hFAlN9AzdZBK6PpYu9wHoxolN1wMXQB/caAC4Jhb04P7bYiajCquejolaxJ1XgIfvAy5wrtcY5rkPdDFfZIH04Jo2XAesEJpr/fRwIOw29dilHqYe6skQ0CPPiIZEPGGZiUQpE63o3ONtTirZQ50p7tvldxXY2xZxr8ZyH/x/J2PjMlfo70QmK7M/RNdE2wPzdaNuocvaDWt3WV11DZPu8T5AZty2R0fKh4Tbg/ee55suuqxufkFB1U1jHnTArqMzAxZmMIFXGZBhdOGITIcYkcAZkcrPNWq5jAID0iwSnBaxj2YaZQB2011P//hK039+Ae74WrjjM7j3lD1idhsOO3zTHPuHb5Ym8tdnEKDw5c/Y4jKecAierkSweL4mGH4VnmE0JlBX0VpAwe8AdDEi0MjVWSuyU7H1ilLrnbF2HKnlWz5cTWt1rT2B/7rbPh/Bv62g1KBnuKZ8aA0sPz7HwDzF2fo6GheMKCnMKs0vct8WoxAoGXr6Vno0aHNGCckQu31RQ8xUVbSfuDGZSahtvcRrCtfseni197ji0p6SA6zn0wvGhW/JOci4+PBS04v7WlIz+gBSE8Axf8k/gNaMwZhAP4DWTIIRgQJ3TuOmuJM79uIqIzR/tBG5GuT4ETn2vupZMC3dsdzs6usJwBErsSmmfYgL60TAxccwQVyIYevuP8TCnY5jsgAeFvFkLNyZNDWLZDIW8U/HAk7FwsShaVh0R489FmbtMAGLSWOn6bfFYrLYGU8aOyPPHIkmi53xpLHTy2Ky2BlPGju9LKaLnVrXeXY5Lj0US/WhWPBiOyOcL9RGRT/h37Eo//l7dfbE7IWrhILltnsQqcpGpHOBXSzAwVLq3CpH5E5n1FVRyOpeqW27UD665+jl8W8YTd3toZpFimcb0Sepw8WPuzlxdxEf5BpFmD7pzduza5R3vpEgqOGwSPDcN3EWcA7Qlc4bU+Dg9G4ODvHaQRL9fjydXTXf+YL3RY73AxWXp9ebjnm9V8TA5+8=&lt;/diagram&gt;&lt;/mxfile&gt;">
     <defs/>
     <g>
         <g>
-            <rect x="220" y="310" width="550" height="240" fill="none" stroke="#000000" pointer-events="all" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+            <rect x="220" y="310" width="550" height="240" fill="none" stroke="#cccccc" stroke-width="3" stroke-dasharray="9 9" pointer-events="all" style="stroke: light-dark(rgb(204, 204, 204), rgb(62, 62, 62));"/>
         </g>
         <g>
-            <rect x="410" y="10" width="360" height="220" fill="none" stroke="#000000" pointer-events="all" style="stroke: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));"/>
+            <rect x="410" y="10" width="360" height="220" fill="none" stroke="#cccccc" stroke-width="3" stroke-dasharray="9 9" pointer-events="all" style="stroke: light-dark(rgb(204, 204, 204), rgb(62, 62, 62));"/>
         </g>
         <g>
             <rect x="0" y="0" width="180" height="50" rx="7.5" ry="7.5" fill="#ffe6cc" stroke="#d79b00" pointer-events="all" style="fill: light-dark(rgb(255, 230, 204), rgb(54, 33, 10)); stroke: light-dark(rgb(215, 155, 0), rgb(153, 101, 0));"/>
@@ -45,6 +45,10 @@
                                     <br/>
                                     <span style="color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));">
                                         spark-submit
+                                        <font style="font-size: 1px;">
+                                            <br/>
+                                        </font>
+                                        <br/>
                                     </span>
                                 </div>
                             </div>
@@ -336,29 +340,29 @@
                 <switch>
                     <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
                         <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 38px; height: 1px; padding-top: 420px; margin-left: 181px;">
-                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
-                                <div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
-                                    <font style="font-size: 8px;">
+                            <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #B3B3B3; ">
+                                <div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#B3B3B3, #535353); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
+                                    <font style="font-size: 8px; color: light-dark(rgb(179, 179, 179), rgb(83, 83, 83));">
                                         gRPC
                                     </font>
                                 </div>
                             </div>
                         </div>
                     </foreignObject>
-                    <text x="200" y="423" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle">
+                    <text x="200" y="423" fill="#B3B3B3" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle">
                         gRPC
                     </text>
                 </switch>
             </g>
         </g>
         <g>
-            <rect x="0" y="160" width="180" height="20" fill="#e1d5e7" stroke="#9673a6" pointer-events="all" style="fill: light-dark(rgb(225, 213, 231), rgb(57, 47, 63)); stroke: light-dark(rgb(150, 115, 166), rgb(149, 119, 163));"/>
+            <rect x="0" y="143" width="180" height="20" fill="#e1d5e7" stroke="#9673a6" pointer-events="all" style="fill: light-dark(rgb(225, 213, 231), rgb(57, 47, 63)); stroke: light-dark(rgb(150, 115, 166), rgb(149, 119, 163));"/>
         </g>
         <g>
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 170px; margin-left: 1px;">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 178px; height: 1px; padding-top: 153px; margin-left: 1px;">
                             <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
                                 <div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
                                     Spark Driver
@@ -366,20 +370,20 @@
                             </div>
                         </div>
                     </foreignObject>
-                    <text x="90" y="174" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle">
+                    <text x="90" y="157" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle">
                         Spark Driver
                     </text>
                 </switch>
             </g>
         </g>
         <g>
-            <rect x="240" y="470" width="160" height="20" fill="#e1d5e7" stroke="#9673a6" pointer-events="all" style="fill: light-dark(rgb(225, 213, 231), rgb(57, 47, 63)); stroke: light-dark(rgb(150, 115, 166), rgb(149, 119, 163));"/>
+            <rect x="240" y="459" width="160" height="20" fill="#e1d5e7" stroke="#9673a6" pointer-events="all" style="fill: light-dark(rgb(225, 213, 231), rgb(57, 47, 63)); stroke: light-dark(rgb(150, 115, 166), rgb(149, 119, 163));"/>
         </g>
         <g>
             <g transform="translate(-0.5 -0.5)">
                 <switch>
                     <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
-                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 158px; height: 1px; padding-top: 480px; margin-left: 241px;">
+                        <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 158px; height: 1px; padding-top: 469px; margin-left: 241px;">
                             <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000; ">
                                 <div style="display: inline-block; font-size: 12px; font-family: &quot;Helvetica&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal; ">
                                     Spark Driver
@@ -387,7 +391,7 @@
                             </div>
                         </div>
                     </foreignObject>
-                    <text x="320" y="484" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle">
+                    <text x="320" y="473" fill="light-dark(#000000, #ffffff)" font-family="&quot;Helvetica&quot;" font-size="12px" text-anchor="middle">
                         Spark Driver
                     </text>
                 </switch>
