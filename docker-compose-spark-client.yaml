@@ -1,0 +1,21 @@
+services:
+  spark-client:
+    image: apache/spark:3.5.1
+    container_name: spark-client
+    ports:
+      - 4041:4041
+    volumes:
+      - ./data:/opt/data
+      - ./pyspark:/opt/pyspark
+      - ./spark/jars/postgresql-42.2.23.jar:/opt/spark/jars/postgresql-42.2.23.jar
+      - ./spark/jars/clickhouse-jdbc-all-0.9.8.jar:/opt/spark/jars/clickhouse-jdbc-all-0.9.8.jar
+    environment:
+      - SPARK_MODE=client
+    command: tail -f /dev/null
+    networks:
+      - lakehouse
+
+networks:
+  lakehouse:
+    name: lakehouse
+    driver: bridge

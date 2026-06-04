@@ -1,10 +1,9 @@
 x-spark-common: &spark-common
   image: apache/spark:3.5.1
   volumes:
-    - ./spark/work-dir:/opt/spark/work-dir
+    - ./data:/opt/data
     - ./spark/jars/postgresql-42.2.23.jar:/opt/spark/jars/postgresql-42.2.23.jar
-    - ./spark/jars/clickhouse-jdbc-0.1.39.jar:/opt/spark/jars/clickhouse-jdbc-0.1.39.jar
-    - ./spark/jars/clickhouse-jdbc.jar:/opt/spark/jars/clickhouse-jdbc.jar
+    - ./spark/jars/clickhouse-jdbc-all-0.9.8.jar:/opt/spark/jars/clickhouse-jdbc-all-0.9.8.jar
     - ./spark/jars/spark-connect_2.12-3.5.1.jar:/opt/spark/jars/spark-connect_2.12-3.5.1.jar
   networks:
     - lakehouse
@@ -30,7 +29,7 @@ services:
     ports:
       - 8081:8080
       - 7077:7077
-      - 4040:4040
+      - 4040:4040 # -- нужно если мы хотим запустить Spark UI(это означает что Spark Driver запустился на мастере) на мастере
     environment:
       - SPARK_MODE=master
     command:
