@@ -1,0 +1,26 @@
+services:
+  spark-connect:
+    image: apache/spark:3.5.1
+    container_name: spark-connect
+    ports:
+      - 15002:15002
+      - 4042:4042
+    volumes:
+      - ./data:/opt/data
+      - ./spark/jars/postgresql-42.2.23.jar:/opt/spark/jars/postgresql-42.2.23.jar
+      - ./spark/jars/clickhouse-jdbc-all-0.9.8.jar:/opt/spark/jars/clickhouse-jdbc-all-0.9.8.jar
+      - ./spark/jars/spark-connect_2.12-3.5.1.jar:/opt/spark/jars/spark-connect_2.12-3.5.1.jar
+    command: >
+      /opt/spark/bin/spark-submit
+      --conf "spark.driver.extraJavaOptions=-Divy.home=/tmp/.ivy"
+      --conf "spark.ui.port=4042"
+      --class org.apache.spark.sql.connect.service.SparkConnectServer
+      --master spark://spark-master:7077
+      spark-internal
+    networks:
+      - lakehouse
+
+networks:
+  lakehouse:
+    name: lakehouse
+    driver: bridge
