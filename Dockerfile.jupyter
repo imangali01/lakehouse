@@ -20,7 +20,8 @@ RUN pip install --no-cache-dir \
     "protobuf>=3.19.0" \
     pandas \
     pyarrow \
-    findspark
+    findspark \
+    boto3
 
 # Дополнительные библиотеки для аналитики (добавь нужные, например: matplotlib, seaborn, openpyxl)
 RUN pip install --no-cache-dir \
