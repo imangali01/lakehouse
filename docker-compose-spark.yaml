@@ -2,6 +2,7 @@ x-spark-common: &spark-common
   image: apache/spark:3.5.1
   volumes:
     - ./data:/opt/data
+    # - ./spark/conf/spark-defaults.conf:/opt/spark/conf/spark-defaults.conf
     - ./spark/jars/postgresql-42.7.3.jar:/opt/spark/jars/postgresql-42.7.3.jar
     - ./spark/jars/clickhouse-jdbc-0.9.8-all.jar:/opt/spark/jars/clickhouse-jdbc-0.9.8-all.jar
     - ./spark/jars/trino-jdbc-472.jar:/opt/spark/jars/trino-jdbc-472.jar

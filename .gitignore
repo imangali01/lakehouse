@@ -3,3 +3,5 @@
 .ipynb_checkpoints/
 dbt/logs/*
 spark/jars/*
+anaconda_projects
+.virtual_documents
