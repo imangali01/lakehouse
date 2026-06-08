@@ -7,11 +7,14 @@ services:
       - 4042:4042
     volumes:
       - ./data:/opt/data
-      - ./spark/jars/postgresql-42.2.23.jar:/opt/spark/jars/postgresql-42.2.23.jar
+      - ./spark/jars/postgresql-42.7.3.jar:/opt/spark/jars/postgresql-42.7.3.jar
       - ./spark/jars/clickhouse-jdbc-0.9.8-all.jar:/opt/spark/jars/clickhouse-jdbc-0.9.8-all.jar
       - ./spark/jars/trino-jdbc-472.jar:/opt/spark/jars/trino-jdbc-472.jar
       - ./spark/jars/hadoop-aws-3.3.4.jar:/opt/spark/jars/hadoop-aws-3.3.4.jar
       - ./spark/jars/aws-java-sdk-bundle-1.12.262.jar:/opt/spark/jars/aws-java-sdk-bundle-1.12.262.jar
+      - ./spark/jars/iceberg-spark-runtime-3.5_2.12-1.6.1.jar:/opt/spark/jars/iceberg-spark-runtime-3.5_2.12-1.6.1.jar
+      - ./spark/jars/aws-crt-client-2.20.160.jar:/opt/spark/jars/aws-crt-client-2.20.160.jar
+      - ./spark/jars/bundle-2.20.160.jar:/opt/spark/jars/bundle-2.20.160.jar
       - ./spark/jars/spark-connect_2.12-3.5.1.jar:/opt/spark/jars/spark-connect_2.12-3.5.1.jar
     command: >
       /opt/spark/bin/spark-submit
